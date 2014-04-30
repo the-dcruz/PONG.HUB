@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A08190A191096380032B0E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A081909191096380032B0E8 /* Foundation.framework */; };
+		5A08190C191096380032B0E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A08190B191096380032B0E8 /* CoreGraphics.framework */; };
+		5A08190E191096380032B0E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A08190D191096380032B0E8 /* UIKit.framework */; };
+		5A081914191096380032B0E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A081912191096380032B0E8 /* InfoPlist.strings */; };
+		5A081916191096380032B0E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A081915191096380032B0E8 /* main.m */; };
+		5A08191A191096380032B0E8 /* phubAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A081919191096380032B0E8 /* phubAppDelegate.m */; };
+		5A08191C191096380032B0E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A08191B191096380032B0E8 /* Images.xcassets */; };
+		5A081923191096380032B0E8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A081922191096380032B0E8 /* XCTest.framework */; };
+		5A081924191096380032B0E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A081909191096380032B0E8 /* Foundation.framework */; };
+		5A081925191096380032B0E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A08190D191096380032B0E8 /* UIKit.framework */; };
+		5A08192D191096380032B0E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A08192B191096380032B0E8 /* InfoPlist.strings */; };
+		5A08192F191096380032B0E8 /* PONG_HUBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A08192E191096380032B0E8 /* PONG_HUBTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A081926191096380032B0E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A0818FE191096380032B0E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A081905191096380032B0E8;
+			remoteInfo = PONG.HUB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A081906191096380032B0E8 /* PONG.HUB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PONG.HUB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A081909191096380032B0E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5A08190B191096380032B0E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5A08190D191096380032B0E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5A081911191096380032B0E8 /* PONG.HUB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PONG.HUB-Info.plist"; sourceTree = "<group>"; };
+		5A081913191096380032B0E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A081915191096380032B0E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A081917191096380032B0E8 /* PONG.HUB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PONG.HUB-Prefix.pch"; sourceTree = "<group>"; };
+		5A081918191096380032B0E8 /* phubAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = phubAppDelegate.h; sourceTree = "<group>"; };
+		5A081919191096380032B0E8 /* phubAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = phubAppDelegate.m; sourceTree = "<group>"; };
+		5A08191B191096380032B0E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5A081921191096380032B0E8 /* PONG.HUBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PONG.HUBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A081922191096380032B0E8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5A08192A191096380032B0E8 /* PONG.HUBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PONG.HUBTests-Info.plist"; sourceTree = "<group>"; };
+		5A08192C191096380032B0E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A08192E191096380032B0E8 /* PONG_HUBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PONG_HUBTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A081903191096380032B0E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A08190C191096380032B0E8 /* CoreGraphics.framework in Frameworks */,
+				5A08190E191096380032B0E8 /* UIKit.framework in Frameworks */,
+				5A08190A191096380032B0E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A08191E191096380032B0E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A081923191096380032B0E8 /* XCTest.framework in Frameworks */,
+				5A081925191096380032B0E8 /* UIKit.framework in Frameworks */,
+				5A081924191096380032B0E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A0818FD191096380032B0E8 = {
+			isa = PBXGroup;
+			children = (
+				5A08190F191096380032B0E8 /* PONG.HUB */,
+				5A081928191096380032B0E8 /* PONG.HUBTests */,
+				5A081908191096380032B0E8 /* Frameworks */,
+				5A081907191096380032B0E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A081907191096380032B0E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A081906191096380032B0E8 /* PONG.HUB.app */,
+				5A081921191096380032B0E8 /* PONG.HUBTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A081908191096380032B0E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A081909191096380032B0E8 /* Foundation.framework */,
+				5A08190B191096380032B0E8 /* CoreGraphics.framework */,
+				5A08190D191096380032B0E8 /* UIKit.framework */,
+				5A081922191096380032B0E8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A08190F191096380032B0E8 /* PONG.HUB */ = {
+			isa = PBXGroup;
+			children = (
+				5A081918191096380032B0E8 /* phubAppDelegate.h */,
+				5A081919191096380032B0E8 /* phubAppDelegate.m */,
+				5A08191B191096380032B0E8 /* Images.xcassets */,
+				5A081910191096380032B0E8 /* Supporting Files */,
+			);
+			path = PONG.HUB;
+			sourceTree = "<group>";
+		};
+		5A081910191096380032B0E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A081911191096380032B0E8 /* PONG.HUB-Info.plist */,
+				5A081912191096380032B0E8 /* InfoPlist.strings */,
+				5A081915191096380032B0E8 /* main.m */,
+				5A081917191096380032B0E8 /* PONG.HUB-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A081928191096380032B0E8 /* PONG.HUBTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A08192E191096380032B0E8 /* PONG_HUBTests.m */,
+				5A081929191096380032B0E8 /* Supporting Files */,
+			);
+			path = PONG.HUBTests;
+			sourceTree = "<group>";
+		};
+		5A081929191096380032B0E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A08192A191096380032B0E8 /* PONG.HUBTests-Info.plist */,
+				5A08192B191096380032B0E8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A081905191096380032B0E8 /* PONG.HUB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A081932191096380032B0E8 /* Build configuration list for PBXNativeTarget "PONG.HUB" */;
+			buildPhases = (
+				5A081902191096380032B0E8 /* Sources */,
+				5A081903191096380032B0E8 /* Frameworks */,
+				5A081904191096380032B0E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PONG.HUB;
+			productName = PONG.HUB;
+			productReference = 5A081906191096380032B0E8 /* PONG.HUB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A081920191096380032B0E8 /* PONG.HUBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A081935191096380032B0E8 /* Build configuration list for PBXNativeTarget "PONG.HUBTests" */;
+			buildPhases = (
+				5A08191D191096380032B0E8 /* Sources */,
+				5A08191E191096380032B0E8 /* Frameworks */,
+				5A08191F191096380032B0E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A081927191096380032B0E8 /* PBXTargetDependency */,
+			);
+			name = PONG.HUBTests;
+			productName = PONG.HUBTests;
+			productReference = 5A081921191096380032B0E8 /* PONG.HUBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A0818FE191096380032B0E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = phub;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "PONG HUB";
+				TargetAttributes = {
+					5A081920191096380032B0E8 = {
+						TestTargetID = 5A081905191096380032B0E8;
+					};
+				};
+			};
+			buildConfigurationList = 5A081901191096380032B0E8 /* Build configuration list for PBXProject "PONG.HUB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5A0818FD191096380032B0E8;
+			productRefGroup = 5A081907191096380032B0E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A081905191096380032B0E8 /* PONG.HUB */,
+				5A081920191096380032B0E8 /* PONG.HUBTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A081904191096380032B0E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A081914191096380032B0E8 /* InfoPlist.strings in Resources */,
+				5A08191C191096380032B0E8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A08191F191096380032B0E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A08192D191096380032B0E8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A081902191096380032B0E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A081916191096380032B0E8 /* main.m in Sources */,
+				5A08191A191096380032B0E8 /* phubAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A08191D191096380032B0E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A08192F191096380032B0E8 /* PONG_HUBTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A081927191096380032B0E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A081905191096380032B0E8 /* PONG.HUB */;
+			targetProxy = 5A081926191096380032B0E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A081912191096380032B0E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A081913191096380032B0E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5A08192B191096380032B0E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A08192C191096380032B0E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A081930191096380032B0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A081931191096380032B0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A081933191096380032B0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PONG.HUB/PONG.HUB-Prefix.pch";
+				INFOPLIST_FILE = "PONG.HUB/PONG.HUB-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5A081934191096380032B0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PONG.HUB/PONG.HUB-Prefix.pch";
+				INFOPLIST_FILE = "PONG.HUB/PONG.HUB-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5A081936191096380032B0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PONG.HUB.app/PONG.HUB";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PONG.HUB/PONG.HUB-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PONG.HUBTests/PONG.HUBTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5A081937191096380032B0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PONG.HUB.app/PONG.HUB";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PONG.HUB/PONG.HUB-Prefix.pch";
+				INFOPLIST_FILE = "PONG.HUBTests/PONG.HUBTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A081901191096380032B0E8 /* Build configuration list for PBXProject "PONG.HUB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A081930191096380032B0E8 /* Debug */,
+				5A081931191096380032B0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A081932191096380032B0E8 /* Build configuration list for PBXNativeTarget "PONG.HUB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A081933191096380032B0E8 /* Debug */,
+				5A081934191096380032B0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5A081935191096380032B0E8 /* Build configuration list for PBXNativeTarget "PONG.HUBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A081936191096380032B0E8 /* Debug */,
+				5A081937191096380032B0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A0818FE191096380032B0E8 /* Project object */;
+}
