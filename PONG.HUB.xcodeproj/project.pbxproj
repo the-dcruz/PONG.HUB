@@ -21,7 +21,8 @@
 		5A08192F191096380032B0E8 /* PONG_HUBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A08192E191096380032B0E8 /* PONG_HUBTests.m */; };
 		5A69B6EF1910AC6000D74B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A69B6EE1910AC6000D74B8E /* Main.storyboard */; };
 		9E6FF58F1910D8260067AE1F /* submit.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E6FF58E1910D8260067AE1F /* submit.png */; };
-		9E6FF5911910DA340067AE1F /* logo_onyellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E6FF5901910DA340067AE1F /* logo_onyellow.png */; };
+		9E6FF5931911852D0067AE1F /* logo_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E6FF5921911852D0067AE1F /* logo_top.png */; };
+		9E6FF59519118F1C0067AE1F /* register.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E6FF59419118F1C0067AE1F /* register.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +54,8 @@
 		5A08192E191096380032B0E8 /* PONG_HUBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PONG_HUBTests.m; sourceTree = "<group>"; };
 		5A69B6EE1910AC6000D74B8E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9E6FF58E1910D8260067AE1F /* submit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submit.png; sourceTree = "<group>"; };
-		9E6FF5901910DA340067AE1F /* logo_onyellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_onyellow.png; sourceTree = "<group>"; };
+		9E6FF5921911852D0067AE1F /* logo_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_top.png; sourceTree = "<group>"; };
+		9E6FF59419118F1C0067AE1F /* register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = register.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,10 +127,11 @@
 		5A081910191096380032B0E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9E6FF5901910DA340067AE1F /* logo_onyellow.png */,
 				9E6FF58E1910D8260067AE1F /* submit.png */,
 				5A081911191096380032B0E8 /* PONG.HUB-Info.plist */,
+				9E6FF5921911852D0067AE1F /* logo_top.png */,
 				5A081912191096380032B0E8 /* InfoPlist.strings */,
+				9E6FF59419118F1C0067AE1F /* register.png */,
 				5A081915191096380032B0E8 /* main.m */,
 				5A081917191096380032B0E8 /* PONG.HUB-Prefix.pch */,
 			);
@@ -230,9 +233,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A69B6EF1910AC6000D74B8E /* Main.storyboard in Resources */,
-				9E6FF5911910DA340067AE1F /* logo_onyellow.png in Resources */,
+				9E6FF5931911852D0067AE1F /* logo_top.png in Resources */,
 				9E6FF58F1910D8260067AE1F /* submit.png in Resources */,
 				5A081914191096380032B0E8 /* InfoPlist.strings in Resources */,
+				9E6FF59519118F1C0067AE1F /* register.png in Resources */,
 				5A08191C191096380032B0E8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
