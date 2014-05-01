@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="TZD-ZM-JBq">
             <objects>
-                <viewController id="BPJ-TG-edT" sceneMemberID="viewController">
+                <viewController id="BPJ-TG-edT" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fg4-DU-RO9"/>
                         <viewControllerLayoutGuide type="bottom" id="yaJ-in-6yp"/>
@@ -24,7 +24,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gFo-Q6-aiN" kind="modal" id="95n-Ky-UgA"/>
+                                    <segue destination="gFo-Q6-aiN" kind="modal" id="7cV-qn-8Kp"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GMP-Ck-DOw">
@@ -82,10 +82,16 @@
                                 <state key="normal" backgroundImage="register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="gFo-Q6-aiN" kind="modal" id="FmB-WA-chI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.94901960780000005" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="submitButton" destination="EeH-n0-lpz" id="ln9-4t-daM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="76D-hT-K1i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,4 +147,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="FmB-WA-chI"/>
+    </inferredMetricsTieBreakers>
 </document>
