@@ -20,6 +20,7 @@
 		5A08192D191096380032B0E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A08192B191096380032B0E8 /* InfoPlist.strings */; };
 		5A08192F191096380032B0E8 /* PONG_HUBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A08192E191096380032B0E8 /* PONG_HUBTests.m */; };
 		5A69B6EF1910AC6000D74B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A69B6EE1910AC6000D74B8E /* Main.storyboard */; };
+		5ACBAE2B1911EE3E00CA968C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ACBAE2A1911EE3E00CA968C /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		5A08192C191096380032B0E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A08192E191096380032B0E8 /* PONG_HUBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PONG_HUBTests.m; sourceTree = "<group>"; };
 		5A69B6EE1910AC6000D74B8E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5ACBAE2A1911EE3E00CA968C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A08190C191096380032B0E8 /* CoreGraphics.framework in Frameworks */,
+				5ACBAE2B1911EE3E00CA968C /* FacebookSDK.framework in Frameworks */,
 				5A08190E191096380032B0E8 /* UIKit.framework in Frameworks */,
 				5A08190A191096380032B0E8 /* Foundation.framework in Frameworks */,
 			);
@@ -98,6 +101,7 @@
 		5A081908191096380032B0E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5ACBAE2A1911EE3E00CA968C /* FacebookSDK.framework */,
 				5A081909191096380032B0E8 /* Foundation.framework */,
 				5A08190B191096380032B0E8 /* CoreGraphics.framework */,
 				5A08190D191096380032B0E8 /* UIKit.framework */,
@@ -362,6 +366,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/danielcruz/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PONG.HUB/PONG.HUB-Prefix.pch";
 				INFOPLIST_FILE = "PONG.HUB/PONG.HUB-Info.plist";
@@ -375,6 +383,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/danielcruz/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PONG.HUB/PONG.HUB-Prefix.pch";
 				INFOPLIST_FILE = "PONG.HUB/PONG.HUB-Info.plist";
