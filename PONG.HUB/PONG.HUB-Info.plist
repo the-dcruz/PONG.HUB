@@ -30,7 +30,6 @@
 	<array>
 		<string>armv7</string>
 	</array>
-<<<<<<< HEAD
 	<key>FacebookAppID</key>
 	<string>534290730013669</string>
 	<key>FacebookDisplayName</key>
@@ -43,11 +42,9 @@
 				<string>fb534290730013669</string>
 			</array>
 		</dict>
-=======
 	<key>UIAppFonts</key>
 	<array>
 		<string>GeosansLight.ttf</string>
->>>>>>> FETCH_HEAD
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>

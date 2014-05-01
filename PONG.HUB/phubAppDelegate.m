@@ -12,11 +12,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-<<<<<<< HEAD
     [FBLoginView class];
-=======
     [[UILabel appearance] setFont:[UIFont fontWithName:@"GeosansLight" size:17.0]];
->>>>>>> FETCH_HEAD
     return YES;
 }
 
