@@ -20,7 +20,6 @@
 		5A08192D191096380032B0E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A08192B191096380032B0E8 /* InfoPlist.strings */; };
 		5A08192F191096380032B0E8 /* PONG_HUBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A08192E191096380032B0E8 /* PONG_HUBTests.m */; };
 		5A69B6EF1910AC6000D74B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A69B6EE1910AC6000D74B8E /* Main.storyboard */; };
-		5ACBAE291911E76A00CA968C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACBAE281911E76A00CA968C /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +50,6 @@
 		5A08192C191096380032B0E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A08192E191096380032B0E8 /* PONG_HUBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PONG_HUBTests.m; sourceTree = "<group>"; };
 		5A69B6EE1910AC6000D74B8E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		5ACBAE271911E76A00CA968C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		5ACBAE281911E76A00CA968C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +114,6 @@
 				5A08191B191096380032B0E8 /* Images.xcassets */,
 				5A081910191096380032B0E8 /* Supporting Files */,
 				5A69B6EE1910AC6000D74B8E /* Main.storyboard */,
-				5ACBAE271911E76A00CA968C /* LoginViewController.h */,
-				5ACBAE281911E76A00CA968C /* LoginViewController.m */,
 			);
 			path = PONG.HUB;
 			sourceTree = "<group>";
@@ -251,7 +246,6 @@
 			files = (
 				5A081916191096380032B0E8 /* main.m in Sources */,
 				5A08191A191096380032B0E8 /* phubAppDelegate.m in Sources */,
-				5ACBAE291911E76A00CA968C /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
