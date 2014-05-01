@@ -21,6 +21,9 @@
 		5A08192F191096380032B0E8 /* PONG_HUBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A08192E191096380032B0E8 /* PONG_HUBTests.m */; };
 		5A69B6EF1910AC6000D74B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A69B6EE1910AC6000D74B8E /* Main.storyboard */; };
 		9E91F4C31911FCEA00B0E373 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E91F4C21911FCEA00B0E373 /* FacebookSDK.framework */; };
+		9E91F4C6191202FA00B0E373 /* GeosansLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E91F4C5191202EE00B0E373 /* GeosansLight.ttf */; };
+		9E91F4C91912050900B0E373 /* CustomUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E91F4C81912050900B0E373 /* CustomUILabel.m */; };
+		9E91F4CF19120B0100B0E373 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E91F4CE19120B0100B0E373 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,11 @@
 		5A08192E191096380032B0E8 /* PONG_HUBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PONG_HUBTests.m; sourceTree = "<group>"; };
 		5A69B6EE1910AC6000D74B8E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9E91F4C21911FCEA00B0E373 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		9E91F4C5191202EE00B0E373 /* GeosansLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GeosansLight.ttf; sourceTree = "<group>"; };
+		9E91F4C71912050900B0E373 /* CustomUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUILabel.h; sourceTree = "<group>"; };
+		9E91F4C81912050900B0E373 /* CustomUILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUILabel.m; sourceTree = "<group>"; };
+		9E91F4CD19120B0100B0E373 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		9E91F4CE19120B0100B0E373 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,10 @@
 				5A08191B191096380032B0E8 /* Images.xcassets */,
 				5A081910191096380032B0E8 /* Supporting Files */,
 				5A69B6EE1910AC6000D74B8E /* Main.storyboard */,
+				9E91F4C71912050900B0E373 /* CustomUILabel.h */,
+				9E91F4C81912050900B0E373 /* CustomUILabel.m */,
+				9E91F4CD19120B0100B0E373 /* LoginViewController.h */,
+				9E91F4CE19120B0100B0E373 /* LoginViewController.m */,
 			);
 			path = PONG.HUB;
 			sourceTree = "<group>";
@@ -125,6 +137,7 @@
 		5A081910191096380032B0E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9E91F4C4191202DC00B0E373 /* Fonts */,
 				5A081911191096380032B0E8 /* PONG.HUB-Info.plist */,
 				5A081912191096380032B0E8 /* InfoPlist.strings */,
 				5A081915191096380032B0E8 /* main.m */,
@@ -149,6 +162,14 @@
 				5A08192B191096380032B0E8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E91F4C4191202DC00B0E373 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9E91F4C5191202EE00B0E373 /* GeosansLight.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E91F4C6191202FA00B0E373 /* GeosansLight.ttf in Resources */,
 				5A69B6EF1910AC6000D74B8E /* Main.storyboard in Resources */,
 				5A081914191096380032B0E8 /* InfoPlist.strings in Resources */,
 				5A08191C191096380032B0E8 /* Images.xcassets in Resources */,
@@ -248,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E91F4CF19120B0100B0E373 /* LoginViewController.m in Sources */,
 				5A081916191096380032B0E8 /* main.m in Sources */,
 				5A08191A191096380032B0E8 /* phubAppDelegate.m in Sources */,
+				9E91F4C91912050900B0E373 /* CustomUILabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
