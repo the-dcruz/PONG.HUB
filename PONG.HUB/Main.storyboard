@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BPJ-TG-edT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BPJ-TG-edT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--View Controller-->
         <scene sceneID="TZD-ZM-JBq">
             <objects>
-                <viewController id="BPJ-TG-edT" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="BPJ-TG-edT" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fg4-DU-RO9"/>
                         <viewControllerLayoutGuide type="bottom" id="yaJ-in-6yp"/>
@@ -51,7 +51,8 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zeg-5V-JsR">
                                 <rect key="frame" x="20" y="324" width="81" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_top" translatesAutoresizingMaskIntoConstraints="NO" id="plk-RC-b8e">
@@ -84,19 +85,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.94901960780000005" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
-                        <attributedString key="userComments">
-                            <fragment content="hg">
-                                <attributes>
-                                    <font key="NSFont" metaFont="toolTip"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
                     </view>
-                    <connections>
-                        <outlet property="password" destination="Zeg-5V-JsR" id="Pnc-Nl-n0S"/>
-                        <outlet property="username" destination="kam-BW-bdo" id="kte-Zc-KCT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="76D-hT-K1i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
