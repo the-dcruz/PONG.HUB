@@ -12,6 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UILabel appearance] setFont:[UIFont fontWithName:@"GeosansLight" size:17.0]];
     return YES;
 }
 
