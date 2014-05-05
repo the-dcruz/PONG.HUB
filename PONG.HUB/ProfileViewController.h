@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
+
 
 @interface ProfileViewController : UIViewController
+@property (strong, nonatomic) id<FBGraphUser> loggedInUser;
 
 @end

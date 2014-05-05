@@ -7,8 +7,11 @@
 //
 
 #import "LoginViewController.h"
+#import "ProfileViewController.h"
 
 @interface LoginViewController ()
+
+@property (strong, nonatomic) id<FBGraphUser> loggedInUser;
 
 @end
 
@@ -18,7 +21,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        
     }
     return self;
 }
@@ -26,6 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.fbLoginView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,24 +38,34 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    if (FBSession.activeSession.state == FBSessionStateOpen
-        || FBSession.activeSession.state == FBSessionStateOpenTokenExtended) {
-        [self performSegueWithIdentifier:@"loginToProfile" sender:self];
-    }
+- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
+                            user:(id<FBGraphUser>)user {
+    self.loggedInUser = user;
+    [self performSegueWithIdentifier:@"loginToProfile" sender:self];
 }
 
-/*
+- (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
+    [self performSegueWithIdentifier:@"loginToProfile" sender:self];
+}
+
+- (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
+    // test to see if we can use the share dialog built into the Facebook application
+    FBLinkShareParams *p = [[FBLinkShareParams alloc] init];
+    p.link = [NSURL URLWithString:@"http://developers.facebook.com/ios"];
+    
+    self.loggedInUser = nil;
+}
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"loginToProfile"])
+    {
+        ProfileViewController *svc_obj = segue.destinationViewController;
+        svc_obj.loggedInUser = self.loggedInUser;
+    }
 }
-*/
 
 @end
