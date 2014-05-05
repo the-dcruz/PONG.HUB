@@ -10,7 +10,8 @@
 #import <FacebookSDK/FacebookSDK.h>
 
 
-@interface ProfileViewController : UIViewController
+@interface ProfileViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) id<FBGraphUser> loggedInUser;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
