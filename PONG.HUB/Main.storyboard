@@ -68,7 +68,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo_top" width="338" height="184"/>
+        <image name="logo_top" width="390" height="184"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
