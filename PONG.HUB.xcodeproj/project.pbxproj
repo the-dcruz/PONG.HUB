@@ -20,7 +20,6 @@
 		5A08192D191096380032B0E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A08192B191096380032B0E8 /* InfoPlist.strings */; };
 		5A08192F191096380032B0E8 /* PONG_HUBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A08192E191096380032B0E8 /* PONG_HUBTests.m */; };
 		5A69B6EF1910AC6000D74B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A69B6EE1910AC6000D74B8E /* Main.storyboard */; };
-		5ACBAE2D1911EFA300CA968C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ACBAE2C1911EFA300CA968C /* FacebookSDK.framework */; };
 		5ACBAE331911F4C800CA968C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACBAE321911F4C800CA968C /* LoginViewController.m */; };
 		5ACBAE361911FF2C00CA968C /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACBAE351911FF2C00CA968C /* ProfileViewController.m */; };
 		9E91F4C31911FCEA00B0E373 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E91F4C21911FCEA00B0E373 /* FacebookSDK.framework */; };
@@ -55,7 +54,6 @@
 		5A08192C191096380032B0E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A08192E191096380032B0E8 /* PONG_HUBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PONG_HUBTests.m; sourceTree = "<group>"; };
 		5A69B6EE1910AC6000D74B8E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		5ACBAE2C1911EFA300CA968C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		5ACBAE311911F4C800CA968C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		5ACBAE321911F4C800CA968C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		5ACBAE341911FF2C00CA968C /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
