@@ -1,2 +1,6 @@
 
 *.xcuserstate
+
+*.storyboard
+
+PONG.HUB/Main.storyboard
