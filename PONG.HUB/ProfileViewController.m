@@ -50,6 +50,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
     
+    cell.textLabel.text = @"Guruganesh Kotta";
+    
     return cell;
 }
 
