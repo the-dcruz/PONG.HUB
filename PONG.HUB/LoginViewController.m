@@ -8,7 +8,7 @@
 
 #import "LoginViewController.h"
 #import "ProfileViewController.h"
-#import "phubRegisterUser.h"
+#import "NetworkService.h"
 
 @interface LoginViewController ()
 
@@ -45,10 +45,10 @@
     [self performSegueWithIdentifier:@"loginToProfile" sender:self];
     
     // Register the facebook user in our backend
-    phubRegisterUser *registerer = [[phubRegisterUser alloc] init];
+    NetworkService *networkService = [[NetworkService alloc] init];
     NSString *fbId = [user id];
     NSString *fullName = [[[user first_name] stringByAppendingString:@" " ] stringByAppendingString:[user last_name]];
-    [registerer registerUser:fbId withName:fullName];
+    [networkService registerUser:fbId withName:fullName];
 }
 
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {

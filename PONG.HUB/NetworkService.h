@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface phubRegisterUser : NSObject<NSURLConnectionDelegate>
+@interface NetworkService : NSObject<NSURLConnectionDelegate>
 {
     NSMutableData *_responseData;
 }

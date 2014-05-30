@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 PONG HUB. All rights reserved.
 //
 
-#import "phubRegisterUser.h"
+#import "NetworkService.h"
 
-@implementation phubRegisterUser
+@implementation NetworkService
 #pragma mark NSURLConnection Delegate Methods
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
