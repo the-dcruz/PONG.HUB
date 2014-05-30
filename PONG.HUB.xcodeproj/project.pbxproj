@@ -130,21 +130,12 @@
 		5A08190F191096380032B0E8 /* PONG.HUB */ = {
 			isa = PBXGroup;
 			children = (
-				5ABE6FF41938292500CDBE35 /* NetworkService.h */,
-				5ABE6FF51938292500CDBE35 /* NetworkService.m */,
-				5A081918191096380032B0E8 /* PongHubAppDelegate.h */,
-				5A081919191096380032B0E8 /* PongHubAppDelegate.m */,
-				5A08191B191096380032B0E8 /* Images.xcassets */,
-				5A081910191096380032B0E8 /* Supporting Files */,
 				5A69B6EE1910AC6000D74B8E /* Main.storyboard */,
-				5ACBAE311911F4C800CA968C /* LoginViewController.h */,
-				5ACBAE321911F4C800CA968C /* LoginViewController.m */,
-				5ACBAE341911FF2C00CA968C /* ProfileViewController.h */,
-				5ACBAE351911FF2C00CA968C /* ProfileViewController.m */,
-				5AA832D5191B4DDD00566BC9 /* SettingsViewController.h */,
-				5AA832D6191B4DDD00566BC9 /* SettingsViewController.m */,
-				5ABE6FFA193841F100CDBE35 /* UserProfileTableViewCell.h */,
-				5ABE6FFB193841F100CDBE35 /* UserProfileTableViewCell.m */,
+				5ABE7001193851CA00CDBE35 /* Delegates */,
+				5A081910191096380032B0E8 /* Supporting Files */,
+				5ABE7000193851BF00CDBE35 /* Services */,
+				5ABE6FFE1938519700CDBE35 /* View Controllers */,
+				5ABE6FFF193851A900CDBE35 /* Custom Table Cells */,
 			);
 			path = PONG.HUB;
 			sourceTree = "<group>";
@@ -152,6 +143,7 @@
 		5A081910191096380032B0E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5A08191B191096380032B0E8 /* Images.xcassets */,
 				9E91F4D01912124100B0E373 /* Fonts */,
 				5A081911191096380032B0E8 /* PONG.HUB-Info.plist */,
 				5A081912191096380032B0E8 /* InfoPlist.strings */,
@@ -177,6 +169,46 @@
 				5A08192B191096380032B0E8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5ABE6FFE1938519700CDBE35 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5ACBAE311911F4C800CA968C /* LoginViewController.h */,
+				5ACBAE321911F4C800CA968C /* LoginViewController.m */,
+				5ACBAE341911FF2C00CA968C /* ProfileViewController.h */,
+				5ACBAE351911FF2C00CA968C /* ProfileViewController.m */,
+				5AA832D5191B4DDD00566BC9 /* SettingsViewController.h */,
+				5AA832D6191B4DDD00566BC9 /* SettingsViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5ABE6FFF193851A900CDBE35 /* Custom Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5ABE6FFA193841F100CDBE35 /* UserProfileTableViewCell.h */,
+				5ABE6FFB193841F100CDBE35 /* UserProfileTableViewCell.m */,
+			);
+			name = "Custom Table Cells";
+			sourceTree = "<group>";
+		};
+		5ABE7000193851BF00CDBE35 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5ABE6FF41938292500CDBE35 /* NetworkService.h */,
+				5ABE6FF51938292500CDBE35 /* NetworkService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		5ABE7001193851CA00CDBE35 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				5A081918191096380032B0E8 /* PongHubAppDelegate.h */,
+				5A081919191096380032B0E8 /* PongHubAppDelegate.m */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 		9E91F4D01912124100B0E373 /* Fonts */ = {
