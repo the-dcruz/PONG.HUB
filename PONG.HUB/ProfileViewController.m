@@ -7,6 +7,7 @@
 //
 
 #import "ProfileViewController.h"
+#import "UserProfileTableViewCell.h"
 
 @interface ProfileViewController ()
 
@@ -37,22 +38,35 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"customCell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    UITableViewCell *cell;
+    if (indexPath.row == 0) {
+        cell = (UserProfileTableViewCell*)([tableView dequeueReusableCellWithIdentifier:@"userCell" forIndexPath:indexPath]);
+        ((UserProfileTableViewCell*)cell).username.text = [[self.loggedInUser.first_name stringByAppendingString:@" "] stringByAppendingString:self.loggedInUser.last_name];
+        ((UserProfileTableViewCell*)cell).username.adjustsFontSizeToFitWidth = YES;
+        [((UserProfileTableViewCell*)cell).username setFont:[UIFont fontWithName:@"GeosansLight" size:25.0]];
+    } else if (indexPath.row == 1) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"statsNav" forIndexPath:indexPath];
+    } else if (indexPath.row == 2) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"pointerCell" forIndexPath:indexPath];
     }
     
-    cell.textLabel.text = @"Guruganesh Kotta";
-    
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0)
+        return 75;
+    else if (indexPath.row == 1)
+        return 55;
+    else if (indexPath.row == 2)
+        return 15;
+    return 0;
 }
 
 /*

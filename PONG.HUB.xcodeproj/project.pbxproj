@@ -12,7 +12,7 @@
 		5A08190E191096380032B0E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A08190D191096380032B0E8 /* UIKit.framework */; };
 		5A081914191096380032B0E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A081912191096380032B0E8 /* InfoPlist.strings */; };
 		5A081916191096380032B0E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A081915191096380032B0E8 /* main.m */; };
-		5A08191A191096380032B0E8 /* phubAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A081919191096380032B0E8 /* phubAppDelegate.m */; };
+		5A08191A191096380032B0E8 /* PongHubAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A081919191096380032B0E8 /* PongHubAppDelegate.m */; };
 		5A08191C191096380032B0E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A08191B191096380032B0E8 /* Images.xcassets */; };
 		5A081923191096380032B0E8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A081922191096380032B0E8 /* XCTest.framework */; };
 		5A081924191096380032B0E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A081909191096380032B0E8 /* Foundation.framework */; };
@@ -22,6 +22,7 @@
 		5A69B6EF1910AC6000D74B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A69B6EE1910AC6000D74B8E /* Main.storyboard */; };
 		5AA832D7191B4DDD00566BC9 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA832D6191B4DDD00566BC9 /* SettingsViewController.m */; };
 		5ABE6FF61938292500CDBE35 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE6FF51938292500CDBE35 /* NetworkService.m */; };
+		5ABE6FFC193841F100CDBE35 /* UserProfileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE6FFB193841F100CDBE35 /* UserProfileTableViewCell.m */; };
 		5ACBAE331911F4C800CA968C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACBAE321911F4C800CA968C /* LoginViewController.m */; };
 		5ACBAE361911FF2C00CA968C /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACBAE351911FF2C00CA968C /* ProfileViewController.m */; };
 		9E91F4C31911FCEA00B0E373 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E91F4C21911FCEA00B0E373 /* FacebookSDK.framework */; };
@@ -47,8 +48,8 @@
 		5A081913191096380032B0E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A081915191096380032B0E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5A081917191096380032B0E8 /* PONG.HUB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PONG.HUB-Prefix.pch"; sourceTree = "<group>"; };
-		5A081918191096380032B0E8 /* phubAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = phubAppDelegate.h; sourceTree = "<group>"; };
-		5A081919191096380032B0E8 /* phubAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = phubAppDelegate.m; sourceTree = "<group>"; };
+		5A081918191096380032B0E8 /* PongHubAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PongHubAppDelegate.h; sourceTree = "<group>"; };
+		5A081919191096380032B0E8 /* PongHubAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PongHubAppDelegate.m; sourceTree = "<group>"; };
 		5A08191B191096380032B0E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5A081921191096380032B0E8 /* PONG.HUBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PONG.HUBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A081922191096380032B0E8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -60,6 +61,8 @@
 		5AA832D6191B4DDD00566BC9 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		5ABE6FF41938292500CDBE35 /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
 		5ABE6FF51938292500CDBE35 /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		5ABE6FFA193841F100CDBE35 /* UserProfileTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileTableViewCell.h; sourceTree = "<group>"; };
+		5ABE6FFB193841F100CDBE35 /* UserProfileTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileTableViewCell.m; sourceTree = "<group>"; };
 		5ACBAE311911F4C800CA968C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		5ACBAE321911F4C800CA968C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		5ACBAE341911FF2C00CA968C /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -129,8 +132,8 @@
 			children = (
 				5ABE6FF41938292500CDBE35 /* NetworkService.h */,
 				5ABE6FF51938292500CDBE35 /* NetworkService.m */,
-				5A081918191096380032B0E8 /* phubAppDelegate.h */,
-				5A081919191096380032B0E8 /* phubAppDelegate.m */,
+				5A081918191096380032B0E8 /* PongHubAppDelegate.h */,
+				5A081919191096380032B0E8 /* PongHubAppDelegate.m */,
 				5A08191B191096380032B0E8 /* Images.xcassets */,
 				5A081910191096380032B0E8 /* Supporting Files */,
 				5A69B6EE1910AC6000D74B8E /* Main.storyboard */,
@@ -140,6 +143,8 @@
 				5ACBAE351911FF2C00CA968C /* ProfileViewController.m */,
 				5AA832D5191B4DDD00566BC9 /* SettingsViewController.h */,
 				5AA832D6191B4DDD00566BC9 /* SettingsViewController.m */,
+				5ABE6FFA193841F100CDBE35 /* UserProfileTableViewCell.h */,
+				5ABE6FFB193841F100CDBE35 /* UserProfileTableViewCell.m */,
 			);
 			path = PONG.HUB;
 			sourceTree = "<group>";
@@ -282,7 +287,8 @@
 			files = (
 				5ABE6FF61938292500CDBE35 /* NetworkService.m in Sources */,
 				5A081916191096380032B0E8 /* main.m in Sources */,
-				5A08191A191096380032B0E8 /* phubAppDelegate.m in Sources */,
+				5A08191A191096380032B0E8 /* PongHubAppDelegate.m in Sources */,
+				5ABE6FFC193841F100CDBE35 /* UserProfileTableViewCell.m in Sources */,
 				5AA832D7191B4DDD00566BC9 /* SettingsViewController.m in Sources */,
 				5ACBAE361911FF2C00CA968C /* ProfileViewController.m in Sources */,
 				5ACBAE331911F4C800CA968C /* LoginViewController.m in Sources */,

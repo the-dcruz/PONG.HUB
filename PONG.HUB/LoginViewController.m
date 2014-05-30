@@ -42,25 +42,14 @@
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
                             user:(id<FBGraphUser>)user {
     self.loggedInUser = user;
-    [self performSegueWithIdentifier:@"loginToProfile" sender:self];
     
     // Register the facebook user in our backend
     NetworkService *networkService = [[NetworkService alloc] init];
     NSString *fbId = [user id];
     NSString *fullName = [[[user first_name] stringByAppendingString:@" " ] stringByAppendingString:[user last_name]];
     [networkService registerUser:fbId withName:fullName];
-}
-
-- (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
-    [self performSegueWithIdentifier:@"loginToProfile" sender:self];
-}
-
-- (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
-    // test to see if we can use the share dialog built into the Facebook application
-    FBLinkShareParams *p = [[FBLinkShareParams alloc] init];
-    p.link = [NSURL URLWithString:@"http://developers.facebook.com/ios"];
     
-    self.loggedInUser = nil;
+    [self performSegueWithIdentifier:@"loginToProfile" sender:self];
 }
 
 #pragma mark - Navigation

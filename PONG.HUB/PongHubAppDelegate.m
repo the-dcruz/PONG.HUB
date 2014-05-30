@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 PONG HUB. All rights reserved.
 //
 
-#import "phubAppDelegate.h"
+#import "PongHubAppDelegate.h"
 
-@implementation phubAppDelegate
+@implementation PongHubAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
