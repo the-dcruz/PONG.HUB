@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
     self.fbLoginView.delegate = self;
+    [self.cancelButton addTarget:self action:@selector(cancelButtonAction:) forControlEvents:(UIControlEvents) UIControlEventTouchDown];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,6 +41,10 @@
     FBLinkShareParams *p = [[FBLinkShareParams alloc] init];
     p.link = [NSURL URLWithString:@"http://developers.facebook.com/ios"];
     [self.view.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void) cancelButtonAction:(id) sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

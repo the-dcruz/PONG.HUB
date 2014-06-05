@@ -11,5 +11,6 @@
 
 @interface SettingsViewController : UIViewController <FBLoginViewDelegate,UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet FBLoginView *fbLoginView;
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
 
 @end
