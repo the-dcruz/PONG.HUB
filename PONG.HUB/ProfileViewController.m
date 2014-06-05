@@ -46,9 +46,16 @@
     UITableViewCell *cell;
     if (indexPath.row == 0) {
         cell = (UserProfileTableViewCell*)([tableView dequeueReusableCellWithIdentifier:@"userCell" forIndexPath:indexPath]);
-        ((UserProfileTableViewCell*)cell).username.text = [[self.loggedInUser.first_name stringByAppendingString:@" "] stringByAppendingString:self.loggedInUser.last_name];
+        
+        ((UserProfileTableViewCell*)cell).username.text = self.loggedInUser.name;
         ((UserProfileTableViewCell*)cell).username.adjustsFontSizeToFitWidth = YES;
         [((UserProfileTableViewCell*)cell).username setFont:[UIFont fontWithName:@"GeosansLight" size:25.0]];
+        
+        //Set Image
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large", self.loggedInUser.id]];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        UIImage *img = [[UIImage alloc] initWithData:data];
+        [((UserProfileTableViewCell*)cell).picture setImage:img];
     } else if (indexPath.row == 1) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"statsNav" forIndexPath:indexPath];
     } else if (indexPath.row == 2) {
