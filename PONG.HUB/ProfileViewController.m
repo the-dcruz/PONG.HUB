@@ -8,9 +8,9 @@
 
 #import "ProfileViewController.h"
 #import "UserProfileTableViewCell.h"
+#import "User.h"
 
 @interface ProfileViewController ()
-
 @end
 
 @implementation ProfileViewController
@@ -28,7 +28,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.tableView.delegate = self;
+    
+    [self configureRestKit];
+    [self loadUsers];
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,8 +65,6 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"pointerCell" forIndexPath:indexPath];
     } else if (indexPath.row == 3) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"cupRatio" forIndexPath:indexPath];
-        //not sure how to make this font size change.
-        cell.textLabel.font = [UIFont systemFontOfSize:8.0];
     } else if (indexPath.row == 4) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"mainStats" forIndexPath:indexPath];
     } else if (indexPath.row == 5) {
@@ -93,7 +93,7 @@
     else if (indexPath.row == 2)
         return 15;
     else if (indexPath.row == 3)
-        return 20;
+        return 35;
     else if (indexPath.row == 4)
         return 90;
     else if (indexPath.row == 5)
@@ -110,6 +110,45 @@
         return 20;
     return 0;
 }
+
+- (void)configureRestKit
+{
+    // initialize AFNetworking HTTPClient
+    NSURL *baseURL = [NSURL URLWithString:@"http://ec2-54-191-92-95.us-west-2.compute.amazonaws.com"];
+    AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
+    
+    // initialize RestKit
+    RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
+    
+    // setup object mappings
+    RKObjectMapping *userMapping = [RKObjectMapping mappingForClass:[User class]];
+    [userMapping addAttributeMappingsFromArray:@[@"fbId",@"fullName",@"displayName",@"location"]];
+    
+    // register mappings with the provider using a response descriptor
+    RKResponseDescriptor *responseDescriptor =
+    [RKResponseDescriptor responseDescriptorWithMapping:userMapping
+                                                 method:RKRequestMethodGET
+                                            pathPattern:@"/getusers.php"
+                                                keyPath:@"users"
+                                            statusCodes:[NSIndexSet indexSetWithIndex:200]];
+    
+    [objectManager addResponseDescriptor:responseDescriptor];
+}
+
+- (void)loadUsers
+{
+    [[RKObjectManager sharedManager] getObjectsAtPath:@"/getusers.php" parameters:nil
+                                              success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+                                                  self.users = mappingResult.array;
+                                                  NSLog(@"User 1: %@",((User*)self.users[0]).fullName);
+                                                  NSLog(@"User 2: %@",((User*)self.users[1]).fullName);
+                                                  NSLog(@"User 3: %@",((User*)self.users[2]).fullName);
+                                              }
+                                              failure:^(RKObjectRequestOperation *operation, NSError *error) {
+                                                  NSLog(@"What do you mean by 'there are no users': %@", error);
+                                              }];
+}
+
 
 /*
 #pragma mark - Navigation

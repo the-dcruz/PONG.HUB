@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import <RestKit/RestKit.h>
 
 
 @interface ProfileViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) id<FBGraphUser> loggedInUser;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSArray *users;
 
 @end

@@ -19,14 +19,16 @@
 		5A081925191096380032B0E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A08190D191096380032B0E8 /* UIKit.framework */; };
 		5A08192D191096380032B0E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A08192B191096380032B0E8 /* InfoPlist.strings */; };
 		5A08192F191096380032B0E8 /* PONG_HUBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A08192E191096380032B0E8 /* PONG_HUBTests.m */; };
+		5A1BB8BC19763F0B0082CF54 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1BB8BB19763F0B0082CF54 /* User.m */; };
+		5A5772DB1978E2F600AB11C8 /* StatsNavTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5772DA1978E2F600AB11C8 /* StatsNavTableViewCell.m */; };
 		5A69B6EF1910AC6000D74B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A69B6EE1910AC6000D74B8E /* Main.storyboard */; };
 		5AA832D7191B4DDD00566BC9 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA832D6191B4DDD00566BC9 /* SettingsViewController.m */; };
 		5ABE6FF61938292500CDBE35 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE6FF51938292500CDBE35 /* NetworkService.m */; };
 		5ABE6FFC193841F100CDBE35 /* UserProfileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE6FFB193841F100CDBE35 /* UserProfileTableViewCell.m */; };
 		5ACBAE331911F4C800CA968C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACBAE321911F4C800CA968C /* LoginViewController.m */; };
 		5ACBAE361911FF2C00CA968C /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACBAE351911FF2C00CA968C /* ProfileViewController.m */; };
-		9E91F4C31911FCEA00B0E373 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E91F4C21911FCEA00B0E373 /* FacebookSDK.framework */; };
 		9E91F4D21912126100B0E373 /* GeosansLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E91F4D11912126100B0E373 /* GeosansLight.ttf */; };
+		A9657D36BA4E4B6A98216C35 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3200ADE8C09D48D69A54A82B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3200ADE8C09D48D69A54A82B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A081906191096380032B0E8 /* PONG.HUB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PONG.HUB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A081909191096380032B0E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A08190B191096380032B0E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,7 +59,12 @@
 		5A08192A191096380032B0E8 /* PONG.HUBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PONG.HUBTests-Info.plist"; sourceTree = "<group>"; };
 		5A08192C191096380032B0E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A08192E191096380032B0E8 /* PONG_HUBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PONG_HUBTests.m; sourceTree = "<group>"; };
-		5A69B6EE1910AC6000D74B8E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5A1BB8B8197626090082CF54 /* libPods-RestKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RestKit.a"; path = "Pods/build/Debug-iphoneos/libPods-RestKit.a"; sourceTree = "<group>"; };
+		5A1BB8BA19763F0B0082CF54 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		5A1BB8BB19763F0B0082CF54 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		5A5772D91978E2F600AB11C8 /* StatsNavTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsNavTableViewCell.h; sourceTree = "<group>"; };
+		5A5772DA1978E2F600AB11C8 /* StatsNavTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsNavTableViewCell.m; sourceTree = "<group>"; };
+		5A69B6EE1910AC6000D74B8E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = PONG.HUB/Main.storyboard; sourceTree = "<group>"; };
 		5AA832D5191B4DDD00566BC9 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		5AA832D6191B4DDD00566BC9 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		5ABE6FF41938292500CDBE35 /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
@@ -67,7 +75,7 @@
 		5ACBAE321911F4C800CA968C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		5ACBAE341911FF2C00CA968C /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		5ACBAE351911FF2C00CA968C /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		9E91F4C21911FCEA00B0E373 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		7757129747974094A48BA195 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		9E91F4D11912126100B0E373 /* GeosansLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GeosansLight.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,9 +85,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A08190C191096380032B0E8 /* CoreGraphics.framework in Frameworks */,
-				9E91F4C31911FCEA00B0E373 /* FacebookSDK.framework in Frameworks */,
 				5A08190E191096380032B0E8 /* UIKit.framework in Frameworks */,
 				5A08190A191096380032B0E8 /* Foundation.framework in Frameworks */,
+				A9657D36BA4E4B6A98216C35 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,9 +108,11 @@
 			isa = PBXGroup;
 			children = (
 				5A08190F191096380032B0E8 /* PONG.HUB */,
+				5A69B6EE1910AC6000D74B8E /* Main.storyboard */,
 				5A081928191096380032B0E8 /* PONG.HUBTests */,
 				5A081908191096380032B0E8 /* Frameworks */,
 				5A081907191096380032B0E8 /* Products */,
+				7757129747974094A48BA195 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,11 +128,12 @@
 		5A081908191096380032B0E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9E91F4C21911FCEA00B0E373 /* FacebookSDK.framework */,
+				5A1BB8B8197626090082CF54 /* libPods-RestKit.a */,
 				5A081909191096380032B0E8 /* Foundation.framework */,
 				5A08190B191096380032B0E8 /* CoreGraphics.framework */,
 				5A08190D191096380032B0E8 /* UIKit.framework */,
 				5A081922191096380032B0E8 /* XCTest.framework */,
+				3200ADE8C09D48D69A54A82B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,7 +141,7 @@
 		5A08190F191096380032B0E8 /* PONG.HUB */ = {
 			isa = PBXGroup;
 			children = (
-				5A69B6EE1910AC6000D74B8E /* Main.storyboard */,
+				5A1BB8BD19763F110082CF54 /* Models */,
 				5ABE7001193851CA00CDBE35 /* Delegates */,
 				5A081910191096380032B0E8 /* Supporting Files */,
 				5ABE7000193851BF00CDBE35 /* Services */,
@@ -171,6 +182,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5A1BB8BD19763F110082CF54 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A1BB8BA19763F0B0082CF54 /* User.h */,
+				5A1BB8BB19763F0B0082CF54 /* User.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		5ABE6FFE1938519700CDBE35 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +209,8 @@
 			children = (
 				5ABE6FFA193841F100CDBE35 /* UserProfileTableViewCell.h */,
 				5ABE6FFB193841F100CDBE35 /* UserProfileTableViewCell.m */,
+				5A5772D91978E2F600AB11C8 /* StatsNavTableViewCell.h */,
+				5A5772DA1978E2F600AB11C8 /* StatsNavTableViewCell.m */,
 			);
 			name = "Custom Table Cells";
 			sourceTree = "<group>";
@@ -226,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A081932191096380032B0E8 /* Build configuration list for PBXNativeTarget "PONG.HUB" */;
 			buildPhases = (
+				946FAB0DEEF54C1F898F726B /* Check Pods Manifest.lock */,
 				5A081902191096380032B0E8 /* Sources */,
 				5A081903191096380032B0E8 /* Frameworks */,
 				5A081904191096380032B0E8 /* Resources */,
+				64EDA39856054EFB93C34BEF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,11 +336,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64EDA39856054EFB93C34BEF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		946FAB0DEEF54C1F898F726B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5A081902191096380032B0E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A5772DB1978E2F600AB11C8 /* StatsNavTableViewCell.m in Sources */,
+				5A1BB8BC19763F0B0082CF54 /* User.m in Sources */,
 				5ABE6FF61938292500CDBE35 /* NetworkService.m in Sources */,
 				5A081916191096380032B0E8 /* main.m in Sources */,
 				5A08191A191096380032B0E8 /* PongHubAppDelegate.m in Sources */,
@@ -437,6 +496,7 @@
 		};
 		5A081933191096380032B0E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7757129747974094A48BA195 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -448,6 +508,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PONG.HUB/PONG.HUB-Prefix.pch";
 				INFOPLIST_FILE = "PONG.HUB/PONG.HUB-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -455,6 +519,7 @@
 		};
 		5A081934191096380032B0E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7757129747974094A48BA195 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -466,6 +531,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PONG.HUB/PONG.HUB-Prefix.pch";
 				INFOPLIST_FILE = "PONG.HUB/PONG.HUB-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

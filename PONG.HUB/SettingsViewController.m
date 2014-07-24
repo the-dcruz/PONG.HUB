@@ -43,7 +43,8 @@
     [self.view.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void) cancelButtonAction:(id) sender {
+- (void) cancelButtonAction:(id) sender
+{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
